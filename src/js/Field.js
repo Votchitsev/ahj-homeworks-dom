@@ -10,7 +10,7 @@ export default class Field {
     }
   }
 
-  moveGnome() {
+  moveGoblin() {
     let index = 0;
 
     setInterval(() => {

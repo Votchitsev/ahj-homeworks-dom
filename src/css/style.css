@@ -14,5 +14,8 @@
 }
 
 .active {
-  background-color: blue;
+  background-image: url('../png/goblin.png');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
