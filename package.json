@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
-    "start": "webpack serve -c .webpack.config",
-    "build": "webpack"
+    "start": "webpack serve -c webpack.config",
+    "build": "webpack --mode=production"
   },
   "repository": {
     "type": "git",

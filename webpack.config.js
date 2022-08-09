@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js'
+    filename: 'index.js',
   },
   devServer: {
     static: {
@@ -18,7 +18,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
     }),
     new MiniCssExtractPlugin(),
   ],
@@ -26,20 +26,16 @@ module.exports = {
     rules: [
       {
         test: /\.png$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ]
+        use: 'file-loader',
       },
       {
         test: /\.css$/i,
         use: [
-          MiniCssExtractPlugin.loader, 
+          MiniCssExtractPlugin.loader,
           'css-loader',
-        ]
-      }
-    ]
+        ],
+      },
+    ],
   },
-  mode: "development",
-}
+  mode: 'development',
+};
