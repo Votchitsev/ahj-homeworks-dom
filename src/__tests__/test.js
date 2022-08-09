@@ -12,3 +12,7 @@ test('Draw field', () => {
   field.drawField();
   expect(container.childNodes.length).toBe(16);
 });
+
+test('getRandomCell method', () => {
+  expect(field.getRandomCell()).not.toBeGreaterThan(15);
+});

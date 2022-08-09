@@ -12,3 +12,7 @@
   height: 100px;
   margin: 2px;
 }
+
+.active {
+  background-color: blue;
+}

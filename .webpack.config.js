@@ -12,7 +12,8 @@ module.exports = {
       directory: path.join(__dirname, 'src'),
     },
     compress: true,
-    port: 8000
+    port: 8000,
+    open: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -20,5 +21,4 @@ module.exports = {
     }),
   ],
   mode: "development",
-  jest: true,
 }
