@@ -2,7 +2,7 @@ image: Ubuntu2004
 
 stack: node 16
 
-braches: 
+branches: 
   only: 
     - master
 
@@ -26,4 +26,4 @@ deploy_script:
   - git_config --global user.email ci@appveyor.com
   - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" > "$HOME/.git-credentials"
   - npx push-dir --dir=dist --branch=gh-pages --force --verbose
-  
+
